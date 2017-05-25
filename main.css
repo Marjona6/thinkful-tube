@@ -1,0 +1,12 @@
+
+
+ul {
+	list-style: none;
+}
+
+li {
+	max-width: 20rem;
+	max-height: auto;
+	min-width: 10rem;
+	min-height: auto;
+}
