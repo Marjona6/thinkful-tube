@@ -30,10 +30,12 @@ $(function() {
                         var htmlOutput = '';
                         $.each(videoArray, function(videoArrayKey, videoArrayValue) {
                             htmlOutput += "<li>";
+                            htmlOutput += "<div class='container'>";
                             htmlOutput += "<p>" + videoArrayValue.snippet.title + "</p>"; // output video title
                             htmlOutput += "<a href='https://www.youtube.com/watch?v=" + videoArrayValue.id.videoId + "' target='_blank'>"; // target blank will open video in new window
                             htmlOutput += "<img src='" + videoArrayValue.snippet.thumbnails.high.url + "'/>"; // display video thumbnail
                             htmlOutput += "</a>";
+                            htmlOutput += "</div>";
                             htmlOutput += "</li>";
                         });
                         $("#js-search-results").html(htmlOutput);
