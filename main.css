@@ -1,5 +1,8 @@
 html {
-	font-family: Arial;
+	font-family: 'Barrio', cursive;
+	background: #050114;
+	text-align: center;
+	color: #a13aea;
 }
 
 ul {
@@ -11,19 +14,21 @@ li {
 }
 
 .container {
-	background: lightblue;
-	border: 6px solid black;
+	font-family: 'El Messiri', sans-serif;
+	background: #f9e60c;
+	color: #050114;
+	border: 3px solid #a13aea;
 	border-radius: 5px;
-	margin: 4rem;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 2rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
 	text-align: center;
-	padding: 2rem;
+	padding: 2rem;*/
 }
 
-img {
+/*img {
 	max-width: 20rem;
 	height: auto;
 	min-width: 10rem;
 	height: auto;
-}
+}*/

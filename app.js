@@ -29,14 +29,20 @@ $(function() {
                     function displaySearchResults(videoArray) {
                         var htmlOutput = '';
                         $.each(videoArray, function(videoArrayKey, videoArrayValue) {
+                        	if ((videoArrayKey+1) % 3 == 0) {
+                        		htmlOutput += "<div class='row'>";
+                        	}
                             htmlOutput += "<li>";
-                            htmlOutput += "<div class='container'>";
+                            htmlOutput += "<div class='col-3 container'>";
                             htmlOutput += "<p>" + videoArrayValue.snippet.title + "</p>"; // output video title
                             htmlOutput += "<a href='https://www.youtube.com/watch?v=" + videoArrayValue.id.videoId + "' target='_blank'>"; // target blank will open video in new window
                             htmlOutput += "<img src='" + videoArrayValue.snippet.thumbnails.default.url + "'/>"; // display video thumbnail
                             htmlOutput += "</a>";
                             htmlOutput += "</div>";
                             htmlOutput += "</li>";
+                            if ((videoArrayKey+1) % 3 == 0) {
+                        		htmlOutput += "</div>";
+                        	}
                         });
                         $("#js-search-results").html(htmlOutput);
                     }
